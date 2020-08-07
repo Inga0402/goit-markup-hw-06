@@ -1026,13 +1026,13 @@ html {
     .modal-form-comment {
         display: block;
         width: 100%;
-        font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.01em;
         color: #757575;
+        border-radius:4px ;
     }
 
     .modal-form-input:focus + .modal-form-label,
@@ -1042,10 +1042,89 @@ html {
     }
 
     .modal-form-input:focus,
-    .modal-form-comment:focus{
+    .modal-form-comment:focus,
+    .modal-form-input:not(:placeholder-shown),
+    .modal-form-comment:not(:placeholder-shown){
         outline: none;
         border-color:var(--accent-color) ;
     } 
+
+    .modal-form-option-span{   
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+
+    }
+
+
+    .modal-form-option-label{
+        margin-bottom: 30px ;
+
+    }
+
+
+    .modal-form-option-span a{
+        color: var(--accent-color);
+}
+
+    .modal-form-option-label{
+        display: flex;
+        text-align: center;
+}
+
+    .modal-form-checkbox:checked + .modal-form-option-span{
+        text-decoration: underline;
+}
+
+    .modal-form-checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+  }
+
+    .modal-form-custom-checkbox{
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        margin-right: 7px;
+}
+
+    .modal-form-checkbox:checked + .modal-form-custom-checkbox{
+        background-color: var(--accent-color);
+       
+    }
+
+    .modal-form-btn{
+        width: 200px;
+        height: 50px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background:var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 56px;
+        padding-right: 55px;
+        margin-left: 100px;
+        cursor: pointer;
+    }
 
 
 /* цвета web color: #2196F3; studio #000000;*/
