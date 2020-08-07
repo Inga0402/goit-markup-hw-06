@@ -971,6 +971,7 @@ html {
     }
     .modal-form{
         width: 528px;
+        height: 581px;
         /* position: absolute;
         top: 50%;
         left: 50%;
@@ -993,7 +994,40 @@ html {
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        margin-bottom: 30px;
     }
+
+
+    .modal-form-input-wrapper{
+        position: relative;
+
+   }
+   .modal-form-label{
+       position: absolute;
+       top: 0;
+       left: 0;
+   }
+
+    .modal-form-input{
+        height: 40px;
+    }
+
+    .modal-form-input,
+    .modal-form-comment {
+        display: block;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: #757575;
+    }
+
+
+
+
 
 
 /* цвета web color: #2196F3; studio #000000;*/
