@@ -1007,6 +1007,7 @@ html {
        top: 50%;
        left: 0;
        transform: translateY(-50%);
+       transition: transform 250px cubic-bezier(0.4, 0, 0.2, 1);
       
    }
 
@@ -1018,6 +1019,7 @@ html {
     .modal-form-comment {
         height: 120px;
         margin-bottom: 28px; 
+        resize: none;
     }
 
     .modal-form-input,
@@ -1033,9 +1035,17 @@ html {
         color: #757575;
     }
 
+    .modal-form-input:focus + .modal-form-label,
+    .modal-form-input:not(:placeholder-shown) + .modal-form-label {
+         transform: translateY(-40px);
+         color: var(--accent-color);
+    }
 
-
-
+    .modal-form-input:focus,
+    .modal-form-comment:focus{
+        outline: none;
+        border-color:var(--accent-color) ;
+    } 
 
 
 /* цвета web color: #2196F3; studio #000000;*/
