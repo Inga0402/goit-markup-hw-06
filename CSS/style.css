@@ -1000,16 +1000,24 @@ html {
 
     .modal-form-input-wrapper{
         position: relative;
-
+        margin-bottom: 28px;
    }
    .modal-form-label{
        position: absolute;
-       top: 0;
+       top: 50%;
        left: 0;
+       transform: translateY(-50%);
+      
    }
 
     .modal-form-input{
         height: 40px;
+      
+    }
+
+    .modal-form-comment {
+        height: 120px;
+        margin-bottom: 28px; 
     }
 
     .modal-form-input,
