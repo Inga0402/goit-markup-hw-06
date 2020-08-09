@@ -55,7 +55,7 @@
             <div class="block-hero">
                 <h1 class="hero-title"> Эффективные решения<br>
                     для вашего бизнеса</h1>
-                <button data-modal-open type="button" class="service-btn">Заказать услугу</button>
+                <button type="button" class="service-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -442,14 +442,14 @@
             </div>
         </div>
     </footer>
-         <div data-modal class="backdrop">
-         
+         <div class="backdrop is-hidden" data-modal>
+           
           
                 <form action="#" class="modal-form">
-                      
+                   
                     <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                    <button data-modal-close type="button" class="modal-close-btn">
-                        <svg class="modal-close-btn-form">
+                    <button  type="button" class="modal-close-btn-form" data-modal-close>
+                        <svg class="modal-close-btn">
                           <use href="./images/sprite.svg#close"></use>
                        </svg> 
                     </button>
@@ -476,19 +476,27 @@
                 </div>
                     <textarea name="user-comment"  class="modal-form-comment" placeholder="Комментарий"></textarea>
                     <label class="modal-form-option-label">
-                        <svg class="modal-close-btn-form">
-                            <use href="./images/sprite.svg#vector-icon"></use>
-                         </svg> 
+                       
                     <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox"/>
                    
-                    <span class="modal-form-custom-checkbox"></span>
-                    
+                    <span class="modal-form-custom-checkbox">
+                         <svg class="modal-close-btn-form">
+                        <use href="./images/sprite.svg#vector-icon">
+                        </use>
+                     </svg> 
+                    </span>
+
+                    <svg class="modal-close-btn-form">
+                        <use href="./images/sprite.svg#vector-icon"></use>
+                     </svg> 
                     <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
                 </label>
                 <button type="submit" class="modal-form-btn">Отправить</button>
                 </form>
     </div>
+
     <script src="./js/modal.js"></script>
+    
 </body>
 
 </html>
